@@ -2,13 +2,18 @@
 
 import os
 import newrelic.agent
-from flask import Flask
+from flask import Flask, redirect, render_template
+
+"""
+personal_website.py
+
+"""
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return '<h1>Hello, World!<h1>'
+def home(name=None):
+    return render_template('index.html', name=name)
 
 if __name__ == '__main__':
     newrelic.agent.initialize('newrelic.ini')
