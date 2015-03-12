@@ -2,10 +2,13 @@
 
 <html>
     <head>
-        <link rel="stylesheet"
-            href="{{url_for('static', filename='css/materialize.css')}}" />
-        <script src="{{url_for('static', filename='js/materialize.js')}}"></script>
+        {% block head %}
+        <title>David Nguyen | {% block title %}{% endblock %}</title>
+
+        {% endblock %}
     </head>
+
+    <body>
 
     <!-- Left Side Nav Bar --> 
     <ul id="nav-mobile" class="side-nav fixed"> 
@@ -13,12 +16,54 @@
             <img class="responsive-img" 
             src="/static/media/img/DavidNguyenPicture.jpg" /> 
         </div>
-        <li class="bold">
-            <a class="waves-effect waves-teal">Hi</a>
+        <li>
+            <a class="waves-effect waves-teal">
+                <i class="small mdi-action-home"></i><b>&nbsp;Home</b></p>
+            </a>
         </li>
-        <li class="bold">
-            <a class="waves-effect waves-teal">Hello</a>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion"> 
+                <li>
+                    <a class="collapsible-header">
+                        Profile
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="http://google.com">Some Project</a></li>
+                            <li><a>Other Thing</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a class="waves-effect waves-teal">
+                <p><b>Projects</b></p>
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect waves-teal">
+                <p><b>Contact</b></p>
+            </a>
         </li>
     </ul>
+
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col s12 offset-m4 m8 offset-l3 l9">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- CSS -->
+        <link rel="stylesheet"
+            href="{{url_for('static', filename='css/materialize.css')}}" />
+
+        <!-- Scripts -->
+        <script src="{{url_for('static', filename='js/materialize.js')}}"></script>
+        <script src="{{url_for('static', filename='js/jquery-2.1.3.min.js')}}"></script> 
+
+    </body>
     
 <html>
