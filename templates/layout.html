@@ -5,48 +5,60 @@
         {% block head %}
         <title>David Nguyen | {% block title %}{% endblock %}</title>
 
+        <!-- CSS -->
+        <link rel="stylesheet"
+            href="{{url_for('static', filename='css/materialize.css')}}" />
+
         {% endblock %}
     </head>
 
     <body>
+        <!-- Left Side Nav Bar --> 
+        <ul id="nav-mobile" class="side-nav fixed blue-grey darken-4">
+            <div class="container" 
+            style="margin-top:15px; margin-bottom:15px;">
+                <img class="responsive-img" 
+                src="/static/media/img/DavidNguyenPicture.jpg" /> 
+            </div>
+            
+            <div class="card-panel teal">
+            <h5 class="center-align white-text">David Nguyen</h6>
+            <h6 class="center-align white-text">Software Developer, Experimenter, and
+                Avid Gamer</h7>
 
-    <!-- Left Side Nav Bar --> 
-    <ul id="nav-mobile" class="side-nav fixed"> 
-        <div class="container" style="margin-top:30px; margin-bottom:30px; width:90%;">
-            <img class="responsive-img" 
-            src="/static/media/img/DavidNguyenPicture.jpg" /> 
-        </div>
-        <li>
-            <a class="waves-effect waves-teal">
-                <i class="small mdi-action-home"></i><b>&nbsp;Home</b></p>
-            </a>
-        </li>
-        <li class="no-padding">
-            <ul class="collapsible collapsible-accordion"> 
-                <li>
-                    <a class="collapsible-header">
-                        Profile
-                    </a>
-                    <div class="collapsible-body">
-                        <ul>
-                            <li><a href="http://google.com">Some Project</a></li>
-                            <li><a>Other Thing</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a class="waves-effect waves-teal">
-                <p><b>Projects</b></p>
-            </a>
-        </li>
-        <li>
-            <a class="waves-effect waves-teal">
-                <p><b>Contact</b></p>
-            </a>
-        </li>
-    </ul>
+            </div>
+
+            <li>
+                <a class="waves-effect waves-purple">
+                    <p><b>Home</b></p>
+                </a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion"> 
+                    <li>
+                        <a class="collapsible-header waves-effect waves-purple">
+                            <p><b>Profile</b></p>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="http://google.com">Some Project</a></li>
+                                <li><a>Other Thing</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="waves-effect waves-teal">
+                    <p><b>Projects</b></p>
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect waves-teal">
+                    <p><b>Contact</b></p>
+                </a>
+            </li>
+        </ul>
 
         <div class="container">
             <div class="row">
@@ -55,15 +67,11 @@
                 </div>
             </div>
         </div>
-        
-        <!-- CSS -->
-        <link rel="stylesheet"
-            href="{{url_for('static', filename='css/materialize.css')}}" />
-
+         
         <!-- Scripts -->
-        <script src="{{url_for('static', filename='js/materialize.js')}}"></script>
-        <script src="{{url_for('static', filename='js/jquery-2.1.3.min.js')}}"></script> 
+        <script src="{{url_for('static', filename='js/jquery-2.1.1.min.js')}}"></script> 
+        <script src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
 
     </body>
     
-<html>
+</html>
