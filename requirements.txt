@@ -1,7 +1,0 @@
-Django==1.6.1
-Flask==0.10.1
-Jinja2==2.7.3
-Werkzeug==0.10.1
-gunicorn==19.3.0
-newrelic==2.46.0.37
-
