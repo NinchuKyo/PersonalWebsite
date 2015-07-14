@@ -1,7 +1,6 @@
 #!usr/bin/env python
 
 import os
-import newrelic.agent
 from flask import Flask, redirect, render_template
 
 """
@@ -24,6 +23,4 @@ def contact(name=None):
     return render_template('contact.html', name=name)
 
 if __name__ == '__main__':
-    newrelic.agent.initialize('newrelic.ini')
-    port = os.environ.get('PORT', 5000)
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=False, host='0.0.0.0')
