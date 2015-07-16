@@ -39,13 +39,19 @@
                         </a>
                     </li>
                     <li class="collection-item">
-                        <a href="/projects">
+                        <a href="/About">
+                            <i class="fa fa-user fa-2x left"></i>
+                            <h6 class="right-align">About</h6>
+                        </a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="/Projects">
                             <i class="fa fa-file-code-o fa-2x left"></i>
                             <h6 class="right-align">Projects</h6>
                         </a>
                     </li>
                     <li class="collection-item">
-                        <a href="/contact">
+                        <a href="/Contact">
                             <i class="fa fa-envelope fa-2x left"></i>
                             <h6 class="right-align">Contact</h6>
                         </a>
@@ -72,9 +78,11 @@
         <!-- Scripts -->
         <script src="{{url_for('static', filename='js/jquery-2.1.1.min.js')}}"></script> 
         <script src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
-        <script>
+        <script> 
             $(document).ready(function() {
                 $('.parallax').parallax();
+                $('.parallax').hide(0).delay(500).fadeIn(1000);
+                $('#header-text').hide(0).delay(1200).fadeIn(2000);
             }); 
             $('.button-collapse').sideNav();
         </script>
@@ -86,9 +94,9 @@
                 <div class="row">
                     <div class="col s12 offset-m2 m10 offset-l1 l11">
                         © 2015 David Nguyen - 
-                        Images are licensed under<b><a class="bold white-text"
+                        Images are licensed under <u><a class="white-text"
                         href="https://creativecommons.org/publicdomain/zero/1.0/">
-                        Creative Commons Zero (CC0)</a></b>.
+                        Creative Commons Zero (CC0)</a><u>
                     </div>
                 </div>
             </div>

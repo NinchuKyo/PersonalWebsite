@@ -14,11 +14,15 @@ app = Flask(__name__)
 def home(name=None):
     return render_template('index.html', name=name)
 
-@app.route('/projects')
+@app.route('/About')
+def about(name=None):
+    return render_template('about.html', name=name)
+
+@app.route('/Projects')
 def projects(name=None):
     return render_template('projects.html', name=name)
 
-@app.route('/contact')
+@app.route('/Contact')
 def contact(name=None):
     return render_template('contact.html', name=name)
 

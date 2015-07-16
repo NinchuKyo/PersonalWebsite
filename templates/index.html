@@ -10,12 +10,12 @@
                     <img src="/static/media/img/NatureWinter.jpg" />
                 </div>
                 <div class="row container">
-                    <div class="col s12 m12 12 valign"> 
+                    <div id="header-text" class="col s12 m12 12 valign"> 
                         <h1 class="center-align white-text">David Nguyen</h1>
                         <h4 class="center-align light-green-text">Software Developer, 
                         Experimenter, and Avid Gamer</h4>
                     </div>
-                </div>
+                </div> 
 {% endblock %}
 
 {% block content %}
@@ -31,24 +31,98 @@
                             in for hours and hours.
                         </p>
                         <p class="flow-text">Not only limited to making video games,
-                            the potential for software to recreate the world through
-                            innovation, creativity, and experimentation is what is
-                            going to keep me passionate about this field today and
-                            for the future days to come.
+                            the potential for software development to recreate the
+                            world through innovation, creativity, and experimentation
+                            is what is going to keep me passionate about this field
+                            today and for the future days to come.
                         </p>
-                        <p class="flow-text">If you are seeking for a software developer
-                            with a passion for gaming, you've come to the right place!
-                            Stay awhile and see what this site has to offer and maybe
-                            you'll like what you see.
+                        <p class="flow-text">If you are seeking a software developer
+                            with a passion for gaming and a love for coffee, you've
+                            come to the right place! Stay awhile and see what skills
+                            I have to offer for you and your organization.
+                            Maybe you'll like what you see.
                         </p>
                     </div>
                 </div>
+
+                <!-- Projects Heading -->
+                <div class="row container">
+                    <div class="col s12 m12 l12">
+                        <h3 class="right-align blue-text">Projects</h3>
+                        <h5 class="right-align">Here are some of the
+                            previous projects that I've worked on</h5>
+                        <div class="divider"></div>
+                        <br />
+                        <div style="text-align: right">
+                            <a class="waves-effect waves-light btn" href="/Projects">
+                                View More Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Card Section -->
+                <div class="row container">
+                    <div class="col s12 m6 l6">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img src="/static/media/img/_Note.jpg">
+                                <span class="card-title black-text">_Note</span>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    An system that allows for users to sync their notes
+                                    from either a browser or iOS app. 
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="blue-text" href="/Projects">More Info</a>
+                                <a href="https://github.com/NinchuKyo/_Note"
+                                    class="blue-text">
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s12 m6 l6">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img src="/static/media/img/SharePointReportingTool.jpg">
+                                <span class="card-title black-text">SharePoint
+                                    Reporting Tool</span>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    A desktop application used to obtain metadata from
+                                    items from lists/libraries in SharePoint. 
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="blue-text" href="/Projects">More Info</a>
+                                <a class="blue-text"
+                                    href="https://github.com/NinchuKyo/SharePoint-Reporting-Tool" class="blue-text">
+                                    Code
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- End Project Row Container -->
 
                 <!-- Hobbies Heading -->
                 <div class="row container">
                     <div class="col s12 m12 l12">
                         <h3 class="blue-text">Hobbies</h3>
+                        <h5>A bit of insight into what I like to do</h5>
                         <div class="divider"></div>
+                        <br />
+                        <div>
+                            <a class="waves-effect waves-light btn" href="/About">
+                               Learn More About Me 
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -57,38 +131,78 @@
                 <div class="row container">
                     <div class="col s12 m6 l6">
                         <div class="card medium">
-                            <div class="card-image">
-                                <img src="/static/media/img/VideoGame.jpg">
-                                <span class="card-title">Video Games</span>
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="/static/media/img/VideoGame.jpg">
+                                <span class="card-title white-text">Video Games</span>
                             </div>
                             <div class="card-content">
-                                <p>In my spare time, there is nothing as more relaxing 
-                                than playing video games.</p>
+                                <span class="activator">
+                                    <a class="btn-floating right">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </a>
+                                </span>
+                                <p>
+                                    There is nothing as more relaxing 
+                                    than playing video games where you can sit back and
+                                    go at your own pace.
+                                </p>
+                            </div> 
+                            <div class="card-reveal">
+                                <span class="card-title black-text">
+                                    Video Games<i class="fa fa-times fa-2x right"></i>
+                                </span>
+                                <p>
+                                    There is nothing as more relaxing 
+                                    than playing video games where you can sit back and
+                                    go at your own pace.
+                                    <br /><br />
+                                    The type of games that I enjoy
+                                    are usually RPGs, strategy, and card games.
+                                    Some of my favourites are Hearthstone, the
+                                    Civilization series, Pokemon, and the Fire
+                                    Emblem series.
+                                </p>
                             </div>
-                            <div class="card-action">
-                                <a href="http://google.ca">Link to something</a>
-                            </div>
+
                         </div>
                     </div>
                     
                     <div class="col s12 m6 l6">
                         <div class="card medium">
-                            <div class="card-image">
-                                <img src="/static/media/img/NatureWaterfall.jpg">
-                                <span class="card-title">Investing</span>
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="/static/media/img/StockMarket.jpg">
+                                <span class="card-title white-text">Investing</span>
                             </div>
                             <div class="card-content">
-                                <p>Personally, I find it fascinating trying to research
-                                different types of stocks and determine which ones are
-                                good investments.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="http://google.ca">Link to something else</a>
+                                <span class="activator">
+                                    <a class="btn-floating right">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </a>
+                                </span>
+                                <p>
+                                    Personally, I find it fascinating researching many
+                                    different types of stocks and the reasons as to why 
+                                    they are valued at that price.
+                                </p>
+                            </div> 
+                            <div class="card-reveal">
+                                <span class="card-title black-text">
+                                    Investing<i class="fa fa-times fa-2x right"></i>
+                                </span>
+                                <p>
+                                    Personally, I find it fascinating researching many
+                                    different types of stocks and the reasons as to why 
+                                    they are valued at that price.
+                                    <br /><br /> 
+                                    It's really interesting as it teaches you the
+                                    importance of constantly learning, just like in
+                                    the field of software development.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                </div> <!-- End Row Container -->
+                </div> <!-- End Hobby Row Container -->
             </div> <!-- End White Section -->
-    
+                
 {% endblock %}
