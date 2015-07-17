@@ -6,13 +6,10 @@
         <title>David Nguyen | {% block title %}{% endblock %}</title>
 
         <!-- CSS (using fallback.js instead)-->
-        <!-- <link rel="stylesheet"
+        <link rel="stylesheet"
             href="{{url_for('static', filename='css/materialize.min.css')}}" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
         <link rel="stylesheet"
             href="{{url_for('static', filename='font-awesome-4.3.0/css/font-awesome.min.css')}}" />
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /> -->
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {% endblock %}
     </head>
@@ -84,16 +81,6 @@
         <script src="{{url_for('static', filename='js/fallback.min.js')}}"></script>
         <script>
             fallback.load({
-                // Stylesheets
-                materialize_css: [
-                    '//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.css',
-                    '/static/css/materialize.min.css'
-                ],
-                font_awesome_css: [
-                    '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
-                    '/static/font-awesome-4.3.0/css/font-awesome.min.css'
-                ],
-    
                 // JavaScript Libraries
                 jQuery: [
                     '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
@@ -113,9 +100,12 @@
             });
 
             fallback.ready(function() {
-                $('.parallax').parallax();
-                $('#header-image').hide(0).delay(500).fadeIn(1000);
-                $('#header-text').hide(0).delay(1200).fadeIn(2000);
+                $(document).ready(function() {
+                    $('.parallax').parallax();
+                    $('#header-image').hide(0).delay(500).fadeIn(1000);
+                    $('#header-text').hide(0).delay(1200).fadeIn(2000);
+                    $('#sub-header').removeClass("white-text").addClass("light-green-text");
+                });
                 $('.button-collapse').sideNav();
             });  
         </script>
