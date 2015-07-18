@@ -23,16 +23,34 @@
 
             <div class="row">
                 <div class="col hide-on-small-only offset-m9 offset-l10 m3 l2">
-                    <ul class="projectTableOfContents section table-of-contents">
-                        <h6>Table of Contents<h6>
-                        <li><a href="#thiswebsite" class="blue-text">About This Site</a></li>
-                        <li><a href="#note" class="blue-text">_Note</a></li>
-                        <li><a href="#sharepointreporting" class="blue-text">
-                            SharePoint Reporting Tool</a></li>
-                        <li><a href="twitterdatamining" class="blue-text">
-                            Twitter Data Mining</a></li>
-                        <li><a href="tts" class="blue-text">
-                            Task Tracker System</a></li>
+                    <ul class="card-panel projectTableOfContents section light-blue 
+                    lighten-4 table-of-contents">
+                        <h6>Projects TODO:<h6>
+                        <li>
+                            <a id="todo_site" href="#thiswebsite" class="blue-text">
+                                <i class="fa fa-square-o"></i> About This Site
+                            </a>
+                        </li>
+                        <li>
+                            <a id="todo_note" href="#note" class="blue-text">
+                                <i class="fa fa-square-o"></i> _Note
+                            </a>
+                        </li>
+                        <li>
+                            <a id="todo_sharepoint" href="#sharepointreporting" class="blue-text">
+                                <i class="fa fa-square-o"></i> SharePoint Reporting Tool
+                            </a>
+                        </li>
+                        <li>
+                            <a id="todo_twitter" href="#twitterdatamining" class="blue-text">
+                                <i class="fa fa-square-o"></i> Twitter Data Mining
+                            </a>
+                        </li>
+                        <li>
+                            <a id="todo_tts" href="#tts" class="blue-text">
+                                <i class="fa fa-square-o"></i> Task Tracker System
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div> 
@@ -51,18 +69,80 @@
                     <div class="col s12 m5 l5">
                         <div class="card">
                             <div class="card-image">
-                                <img src="/static/media/img/Placeholder.jpg">
+                                <img src="/static/media/img/PersonalWebsite.jpg">
                                 <span class="card-title black-text">This Site</span>
                             </div>
                             <div class="card-action">
                                 <a class="blue-text"
-                                    href="www.google.co://github.com/NinchuKyo/PersonalWebsite">Code</a>
+                                    href="https://github.com/NinchuKyo/PersonalWebsite">Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m7 l7">
-                        LLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumorem ipsum
-                    </div>
+                        <p>
+                            The reasoning as to why I undertook this project to create
+                            a personal site was to showcase the various projects that had
+                            worked on before, and to show what skills I can bring to a
+                            potential person or organization.
+                        </p>
+                        <b>Technologies Used</b>
+                        <p> 
+                            This site is hosted on AWS (Amazon Web Services), using
+                            an EC2 instance. Web page requests / responses are handled
+                            by the Apache module <a href="https://code.google.com/p/modwsgi/">
+                                mod_wsgi</a> as the interface for 
+                            <a href="http://flask.pocoo.org/">Flask</a> 
+                            (a Python micro web framework) responsible for processing
+                            requests received and returning the appropriate web pages.
+                            The front end framework used is
+                            <a href="http://materializecss.com/">Materialize</a>,
+                            which allows for a Bootstrap-like ease-of-use, but
+                            with a different flavour.
+                        </p>
+                        <b>Design Decisions</b>
+                        <p>
+                            Originally, this site was hosted on Heroku, but I
+                            then chose to switch over to AWS due to constraints
+                            present on Heroku's free tier, which made it for
+                            web applications must sleep for 6 hours / day.
+                        </p>
+                    </div> 
+                    <div class="col s12 m12 l12">
+                        <p>
+                            With Heroku, the features provided made it easy to deploy
+                            web applications as it could pull from GitHub
+                            automatically whenever a commit was made, and the
+                            fact that I did not have to worry about setting
+                            up Apache, or configuring security settings. 
+                            However, what I wanted was full uptime without having
+                            to worry if my site was down, and for payment
+                            to be as a per-use basis, instead of a flat fee
+                            on Heroku.  The other bonus was gaining the
+                            knowledge of how to deploy simple web applications
+                            using AWS.
+                        </p>
+                        <p>
+                            Flask was chosen as a web framework due to its simplicity
+                            as it comes with the bare essentials for making a web
+                            application (not needing a lot of boilerplate code to get
+                            the job done), and the ability to get a small site like
+                            mine with minimal features up and running in no time. 
+                        </p>
+                        <p>
+                            I decided to use Materialize for my front-end framework
+                            as I wanted something that looked stylish, but different
+                            as to what Bootstrap had offered, which was responsive
+                            web design. What really impressed me about Materialize
+                            was the use of <a href="http://materializecss.com/cards.html">
+                            cards</a>, which I felt was perfect for displaying
+                            little tidbits of information, but giving a bit of
+                            insight on what the card was about through the card image.
+                            If a person wanted to know more about the card topic, then
+                            links could be provided below the card, just like what the
+                            cards on the home page accomplished by taking you to this
+                            page (if you used them to get to this page).
+                        </p>
+                        </div>
                 </div>
 
                 <div class="row container">
@@ -74,18 +154,36 @@
                 <!-- _Note -->
                 <div id="note" class="row container section scrollspy">
                     <div class="col s12 m7 l7">
-                                            LLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumorem ipsum
+                        <p>
+                            _Note was actually a university course project that
+                            I cooperated with five other classmates to make. We
+                            named it _Note, as the blank could stand for whatever
+                            you needed it to be used for, be it for students needing
+                            to store and access their synced notes from a desktop
+                            or mobile iOS device, or a busy professional on the
+                            go for mobile only.
+                        </p>
+                        <p>
+                            At the time, my classmates and I were introduced to an
+                            app called Evernote, and were amazed at how it could be
+                            used seamlessly across a multitude of devices.  So we
+                            thought, "Hey, wouldn't it be cool if we could make
+                            something like that?", and thus became the inception of
+                            _Note.
+                        </p>
+                        <b>Technologies Used</b>
+                        <p>
+                        </p>
                     </div>
-
                     <div class="col s12 m5 l5">
                         <div class="card">
                             <div class="card-image">
-                                <img src="/static/media/img/Placeholder.jpg">
-                                <span class="card-title black-text">This Site</span>
+                                <img src="/static/media/img/_Note.jpg">
+                                <span class="card-title black-text">_Note</span>
                             </div>
                             <div class="card-action">
                                 <a class="blue-text"
-                                    href="www.google.co://github.com/NinchuKyo/PersonalWebsite">Code</a>
+                                    href="https://github.com/NinchuKyo/_Note">Code</a>
                             </div>
                         </div>
                     </div>
@@ -102,12 +200,12 @@
                     <div class="col s12 m5 l5">
                         <div class="card">
                             <div class="card-image">
-                                <img src="/static/media/img/Placeholder.jpg">
-                                <span class="card-title black-text">This Site</span>
+                                <img src="/static/media/img/SharePointReportingTool.jpg">
+                                <span class="card-title black-text">SharePoint Reporting Tool</span>
                             </div>
                             <div class="card-action">
                                 <a class="blue-text"
-                                    href="www.google.co://github.com/NinchuKyo/PersonalWebsite">Code</a>
+                                    href="https://github.com/NinchuKyo/SharePoint-Reporting-Tool">Code</a>
                             </div>
                         </div>
                     </div>
@@ -122,6 +220,58 @@
                     </div>
                 </div>
 
+                <!-- Twitter Data Mining -->
+
+                <div id="twitterdatamining" class="row container section scrollspy">
+                    <div class="col s12 m7 l7">
+                                            LLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumorem ipsum
+                    </div>
+
+                    <div class="col s12 m5 l5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/static/media/img/Placeholder.jpg">
+                                <span class="card-title black-text">Twitter Data Mining</span>
+                            </div>
+                            <div class="card-action">
+                                <a class="blue-text"
+                                    href="https://github.com/NinchuKyo/TwitterDataMining">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row container">
+                    <div class="col s12 m12 l12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+
+                <!-- Task Tracking System -->
+
+                <div id="tts" class="row container section scrollspy">
+                    <div class="col s12 m5 l5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/static/media/img/Placeholder.jpg">
+                                <span class="card-title black-text">Task Tracking System</span>
+                            </div>
+                            <div class="card-action">
+                                <a class="blue-text"
+                                    href="https://github.com/NinchuKyo/TTS">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m7 l7">
+                        LLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumorem ipsum
+                    </div>
+                </div>
+
+                <div class="row container">
+                    <div class="col s12 m12 l12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
 
             </div> <!-- End Section White -->
 

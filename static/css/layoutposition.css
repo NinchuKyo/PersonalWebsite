@@ -1,10 +1,25 @@
 .projectTableOfContents {
-    top:0;
-    width:100%;
+    top: 0;
+    right: 10 px;
     position:fixed;
+    z-index: 2;
+}
+
+.siteTableOfContents {
+    top: 10%;
+    width:100%;
+    position: fixed;
+}
+
+.topCorner {
+    top: 0;
+    left: 10 px;
+    position:fixed;
+    z-index: 3;
 }
 
 .greenNavbar {
-    top:0;
+    top:10px;
     position:fixed;
+    z-index: 2;
 }

@@ -84,7 +84,26 @@
             <div class="row container">
                 {% block headerImage %}{% endblock %}
             </div>
-        </div>   
+        </div> <!-- End parallax container -->
+
+        <!-- If JavaScript is disabled -->
+        <noscript>
+            <div class="row">
+                <ul class="card-panel topCorner section table-of-contents">
+                    <h6>Site Contents<h6>
+                    <li><a href="/" class="blue-text">Home</a></li>
+                    <li><a href="/About" class="blue-text">About</a></li>
+                    <li><a href="/Projects" class="blue-text">Projects</a></li>
+                    <li><a href="/Contact" class="blue-text">Contact</a></li>
+                    <h6>
+                        By the way, I've noticed that you have JavaScript disabled.
+                        <br />
+                        If you turn it on, you can get this site's full experience.
+                    </h6>
+                </ul>
+                
+            </div>
+        </noscript>
     
         <div id="content"> 
             {% block content %}{% endblock %}
