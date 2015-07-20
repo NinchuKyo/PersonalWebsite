@@ -94,7 +94,7 @@
                             <a href="http://flask.pocoo.org/">Flask</a> 
                             (a Python micro web framework) responsible for processing
                             requests received and returning the appropriate web pages.
-                            The front end framework used is
+                            The front-end framework used is
                             <a href="http://materializecss.com/">Materialize</a>,
                             which allows for a Bootstrap-like ease-of-use, but
                             with a different flavour.
@@ -129,7 +129,7 @@
                             mine with minimal features up and running in no time. 
                         </p>
                         <p>
-                            I decided to use Materialize for my front-end framework
+                            I decided to use Materialize for the front-end framework
                             as I wanted something that looked stylish, but different
                             as to what Bootstrap had offered, which was responsive
                             web design. What really impressed me about Materialize
@@ -141,6 +141,16 @@
                             links could be provided below the card, just like what the
                             cards on the home page accomplished by taking you to this
                             page (if you used them to get to this page).
+                        </p>
+                        <b>Future Project Plans</b>
+                        <p>
+                            The great thing about persuing this project is the
+                            potential for improvements. In the future,
+                            I'm thinking of maybe adding a blog section about
+                            video games and technologies so I can discuss my
+                            thoughts and opinions about them. By doing so, I hope
+                            to improve my writing ability for professional
+                            purposes.
                         </p>
                         </div>
                 </div>
@@ -169,10 +179,18 @@
                             used seamlessly across a multitude of devices.  So we
                             thought, "Hey, wouldn't it be cool if we could make
                             something like that?", and thus became the inception of
-                            _Note.
+                            _Note. Due to the size of this project, each member
+                            had a specific role.
                         </p>
-                        <b>Technologies Used</b>
                         <p>
+                            In the project, my role involved anything that was 
+                            iOS related. This meant that my main goal were 
+                            getting the iOS design and development up and running,
+                            utilizing the testing frameworks for iOS, and making
+                            sure that it would work with our server design. I
+                            felt that this was an interesting challenge as
+                            before this, I had never worked with iOS app development
+                            nor using Objective-C.
                         </p>
                     </div>
                     <div class="col s12 m5 l5">
@@ -186,6 +204,146 @@
                                     href="https://github.com/NinchuKyo/_Note">Code</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <b>Technologies / Methodologies Used</b>
+                        <p>
+                            Considering that this project involved more than
+                            one person, we needed a means of managing ourselves
+                            and how software development should be done.  For
+                            the software development methodology, Agile was used.
+                            We used <a href="https://trello.com/">Trello</a> as our
+                            Kanban board for user stories and feature planning. 
+                            The project lasted for three iterations, with each
+                            iteration being about two to three weeks long.
+                        </p>
+                        <p> 
+                            The web framework / back-end used for _Note was Flask
+                            and hosting was done through AWS using an EC2 instance 
+                            (the same as what was used for this website), but instead
+                            of the standard responses returning static html pages,
+                            _Note uses a REST-style architecture for its responses, 
+                            where they are made in JSON in order to support both
+                            desktop browsers and mobile applications. MVC was the
+                            driving software architecture on how the application was
+                            structured. For version control, Git was used, with
+                            GitHub used to host our Git repository for everyone
+                            on our team to access.
+                        </p>
+                        <p>
+                            The front-end desktop browser client design was done
+                            using a bit of custom CSS, Bootstrap, and AngularJS. 
+                            For the mobile application, which was an iOS application,
+                            Objective-C, with the Cocoa framework was used. Storyboards
+                            were used to manage the multiple view controllers, like
+                            having a slide-out menu for the list of notes, and a view
+                            to load the note's content when a list item is tapped.
+                        </p>
+                        <p>
+                            Note storage was handled by using the user's Dropbox
+                            account that they allowed the application to store
+                            notes via 
+                            <a href="https://www.dropbox.com/developers/reference/oauthguide">OAuth</a>,
+                             which was handled by the
+                            <a href="https://www.dropbox.com/developers/core">
+                            Dropbox API</a>. 
+                        </p>
+
+                        <p>
+                            For testing the desktop browser client, 
+                            <a href="https://qunitjs.com/">QUnit</a> was used for
+                            unit testing, and <a href="http://www.seleniumhq.org/">
+                            Selenium</a> was used as the acceptance testing framework.
+                            As for the iOS client, we used 
+                            <a href="https://github.com/kmalakoff/QUnit.m">
+                            QUnit for iOS</a>, and for acceptance testing, we used
+                            <a href="http://www.testingwithfrank.com/">Frank</a>. 
+                        </p>
+                        <b>Design Decisions</b>
+                        <p>
+                            In this case, Flask was chosen for this project, as
+                            before this, we had never used Python or Flask for
+                            back-end web development and decided as a group that
+                            we wanted to try it out.  In terms of only making
+                            an iOS application and not an Android application
+                            as well, was that it was not required by the
+                            course.
+                        </p>
+                        <p>
+                            When we were wondering what technologies to use for
+                            the desktop browser front-end, one of the members of
+                            our team had experience working with AngularJS and
+                            Bootstrap. Since none of the other members had used
+                            this before, we wanted to learn more about it.
+                            I feel that one of the best ways to learn something
+                            new is to leverage someone else's knowledge, as they
+                            went through the process of learning it, so they
+                            would know the in's and out's of the technology and
+                            how to do things.
+                        </p>
+                        <p>
+                            Since none of us had worked with mobile development
+                            technologies, we just went with what was recommended
+                            to us in the class. It was certainly a different
+                            experience compared to what I had been used to
+                            programming with C#, especially with the use of
+                            NS prefixes in the language, and how to manipulate
+                            objects and variables. Use of the storyboard felt
+                            similar to Visual Studio's WinForms, so I felt
+                            it was pretty easy to get used to.
+                        </p> 
+                        <p>
+                            In terms using the Dropbox API to store a user's
+                            notes through Dropbox, we felt that based on our
+                            application being related to notes accessibility
+                            and modifications across different platforms,
+                            we felt that this the perfect technology to use.
+                            Originally, we wanted some form of syncing across
+                            platforms. However, writing code that handles
+                            syncronization is extremely difficult. Instead,
+                            we thought about how Dropbox was able to sync
+                            files across platforms, so maybe we can somehow
+                            leverage it to store and sync notes, and sure
+                            enough they had an API which we could use.
+                        </p>
+                        <p>
+                            For the testing framework that we chose to use,
+                            we just went with the ones we felt was easier to use,
+                            and the ones that were recommended to us.
+                            In class, we were recommended a couple of options
+                            for which testing frameworks to use. For acceptance
+                            testing for the browser, we had the option of
+                            using <a href="http://jasmine.github.io/">Jasmine</a>
+                             or Selenium, and as noted above, we went with 
+                            Selenium.
+                        </p>
+                        <b>Lessons Learned</b>
+                        <p>
+                            Overall, I felt that from doing this project, I
+                            learned a lot on how programming in a larger
+                            group can be difficult sometimes, and what ends
+                            up happening a sometimes were communication
+                            issues, where one member doesn't communicate
+                            to others what they are doing, resulting in
+                            duplicated work or end goals aren't communicated
+                            clearly enough, resulting in wasted work.
+                            Having went though this experience taught me
+                            greatly on the value of effective communication
+                            and the impact it could have when working with
+                            a team.
+                        </p>
+                        <p>
+                            Sometimes there are moments where there
+                            were disagreements, but a great mentor that I had
+                            the pleasure of working with imparted me with some
+                            great advice, which was, "At the end
+                            of the day, you just brush it off and don't take
+                            anything said against you personally". A part of
+                            being a software developer is listening to
+                            different opinions and being able to acknowledge
+                            how others think and to "walk a mile in their
+                            shoes". 
+                        </p>
                     </div>
                 </div>
 
