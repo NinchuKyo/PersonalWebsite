@@ -470,7 +470,7 @@
                             This was one of the very cool things that I
                             found that I could do with C#, and because
                             of this, I am always looking for a way to
-                            make my work easier if I could write a
+                            make my work easier by seeing if I could write a
                             program to do it for me.
                         </p>
                     </div>
@@ -486,20 +486,117 @@
 
                 <div id="twitterdatamining" class="row container section scrollspy">
                     <div class="col s12 m7 l7">
-                                            LLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumorem ipsum
+                        The Twitter Data Mining Project was one of the most
+                        interesting projects that I had worked on with a
+                        partner while I was in university. This project utilized
+                        the knowledge that we learned in class, and made
+                        us think about the practical applications that data
+                        mining could be used for.
+                        <p>
+                            We decided to analyze Twitter in order to determine
+                            what association rules we could find between a user's
+                            hashtags and anything we could conclude. Our project focused on
+                            analyzing the <a href="https://wiki.cites.illinois.edu/wiki/display/forward/Dataset-UDI-TwitterCrawl-Aug2012">
+                                Twitter dataset</a> constructed from Rui Li, Shengjie Wang,
+                            and Kevin Chen-Chuan Chang, where they obtained it from
+                            Twitter using crawlers to crawl through the Twitter
+                            API.
+                        </p>
+                        <p>
+                            However, in our project, we decided to trim down
+                            the dataset even further by focusing on the more recent
+                            tweets (from the years 2010/2011), as we noticed that
+                            the earlier years had barely any hashtag data.
+                        </p>
+                        <b>Technologies Used</b>
+                        <p>
+                            The project was done in Python, where we used it
+                            to select what data we were going to use out of
+                            the raw data, and to pre-process and transform the
+                            data for input into our data mining algorithms.
+                        </p>
                     </div>
 
                     <div class="col s12 m5 l5">
                         <div class="card">
                             <div class="card-image">
-                                <img src="/static/media/img/Placeholder.jpg">
-                                <span class="card-title black-text">Twitter Data Mining</span>
+                                <img src="/static/media/img/TwitterResults.jpg">
+                                <span class="card-title white-text">Twitter Data Mining</span>
                             </div>
                             <div class="card-action">
                                 <a class="blue-text"
-                                    href="https://github.com/NinchuKyo/TwitterDataMining">Code</a>
+                                    href="https://github.com/NinchuKyo/TwitterDataMining">Code
+                                </a>
+                                <a class="blue-text"
+                                    href="https://www.dropbox.com/s/1y2cf9o0l5khjbp/EurichMathias_NguyenDuong_ProjectReport.pdf?dl=0">Report</a>
                             </div>
                         </div>
+                    </div>
+    
+                    <div class="col s12 m12 l12">
+                        <p>
+                            We used the <a href="http://orange.biolab.si/">
+                            Orange</a> python library to run the data mining
+                            algorithm (<a href="https://en.wikipedia.org/wiki/Apriori_algorithm">Apriori</a>) on our transformed dataset.
+
+                        </p>
+                        <b>Design Decisions</b>
+                        <p>
+                            We used Python for this project because at the
+                            time, this was one of our favourite languages
+                            to use due to its dynamic typing features, and
+                            it was an easy to use language for data
+                            manipulation and data mining tasks. 
+                        </p>
+                        <p>
+                            Orange was used under the recommendation of our
+                            professor, as it contained a faster and more 
+                            efficient implementation of the Apriori
+                            algorithm, compared to a brute-force
+                            implemenation that was provided in our class.
+                        </p>
+                        <p>
+                            As to why we decided to analyze a Twitter dataset,
+                            we were interested in the idea of working with
+                            social media, and using it to find patterns
+                            and relations between hashtags, and why
+                            users hashtag a specific word or phrase
+                            in conjunction with another word / phrase.
+                        </p>
+                        <b>Interesting Interpretations</b>
+                        <p>
+                            Through this project, we found some pretty
+                            interesting hashtag association rules. One thing
+                            that I found interesting was for the dataset
+                            of February 2011, there was an association
+                            between the hashtags 'jan25' and 'Egypt'. Upon further
+                            research, it was discovered that the reason was because 
+                            of the <a href="https://en.wikipedia.org/wiki/Egyptian_Revolution_of_2011">
+                            Egyptian Revolution of 2011</a>. From this,
+                            we were able to link that users tweet dates
+                            of significant imporance, with events that are
+                            significantly important, BUT that don't occur
+                            on a regular basis.
+                        </p>
+                        <b>Lessons Learned</b>
+                        <p>
+                            Through our findings, and the implementation of this
+                            project, I learned a whole lot more about the
+                            practical applications on how data mining can be
+                            used in a real-world context.
+                        </p>
+                        <p>
+                            I feel that in university, a lot of the classes end
+                            up being mostly theory, with no practical
+                            applications to back up what is learned. But in
+                            this class we had a chance to supplement the
+                            knowledge learned in class with a project of
+                            our own choosing to actually apply the knowledge
+                            that we learned. These types of classes were my
+                            favourite in university, as through a project
+                            like this one, you learn so much more about the
+                            topic, rather than just sitting in a lecture. 
+                        </p>
                     </div>
                 </div>
 
@@ -515,8 +612,9 @@
                     <div class="col s12 m5 l5">
                         <div class="card">
                             <div class="card-image">
-                                <img src="/static/media/img/Placeholder.jpg">
-                                <span class="card-title black-text">Task Tracking System</span>
+                                <img src="/static/media/img/TaskTracking.jpg">
+                                <span class="card-title black-text">Task Tracking System
+                                    <h6>(Not actual image of program)</h6></span>
                             </div>
                             <div class="card-action">
                                 <a class="blue-text"
@@ -525,7 +623,94 @@
                         </div>
                     </div>
                     <div class="col s12 m7 l7">
-                        LLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumorem ipsum
+                        The Task Tracking System is a Java desktop 
+                        application for Windows that allows one to
+                        manage tasks for themselves, or for a group.
+                        Its functionality mirrors a to-do list, but
+                        allows for users to assign other members, and
+                        or groups tasks.
+                        <p>
+                            The Task Tracking System was one of the first ever
+                            larger projects that I had worked on as a class group 
+                            project at the time, and was the first time I was
+                            exposed to different software development methodologies 
+                            such as Agile, Waterfall, and Test-driven Development.
+                            This was done back when the only language I knew
+                            enough to program in was Java.
+                        </p>
+                        <p>
+                            At the time, I thought Java was the best language
+                            ever, because it was the first programming language 
+                            I had ever learned. 
+                            However, as I learned more about programming languages,
+                            their origins, and their inner workings, 
+                            I learned that there is no one "best" language. 
+                            Instead, languages are different tools that a 
+                            software developer can use, like how a craftsman 
+                            uses a different tool for each situation.
+                        </p>
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <b>Technologies Used</b>
+                        <p>
+                            Back then, the Java version that was used for
+                            the development of the TTS was version
+                            jdk1.6.0_03. The IDE that we used was 
+                            <a href="https://eclipse.org/">Eclipse</a> as it
+                            contained the <a href="https://eclipse.org/swt">
+                            SWT Library</a> that we needed in order to create
+                            windows and buttons. For the testing framework, 
+                            we used <a href="http://www.jmock.org/">JMock</a>, 
+                            and for the back-end database, we used 
+                            <a href="http://hsqldb.org/">HSQLDB</a>. The 
+                            version control that we used was 
+                            <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System">
+                            CVS</a>, but was uploaded onto GitHub for visibility.
+                        </p>
+                        <b>Design Decisions</b>
+                        <p>
+                            For the most part, most of the technologies used 
+                            were suggested to us during the class. At the time 
+                            of development, we didn't know any other technologies, 
+                            and thus we went with what we knew.
+                        </p>
+                        <p>
+                            For testing, we were introduced to three different 
+                            types of testing which were, unit testing, 
+                            acceptance testing, and integration testing, and 
+                            the concept of testing with a mock where we simulate
+                            testing with the real objects. JMock was really 
+                            handy with this.
+                        </p>
+                        <b>Lessons Learned</b>
+                        <p>
+                            From doing this project, I gained an introduction 
+                            to testing, and what different types of testing that 
+                            we can use to test an application. For example, we 
+                            can unit testing to test the individual components  
+                            of a system, integration testing to test the 
+                            interactions between the components, and acceptance 
+                            testing to test if we have met the user's 
+                            requirements.
+                        </p>
+                        <p>
+                            It made me gain a greater appreciation for testing, 
+                            and understand that in the long run, it saves us 
+                            time whenever we caught a bug. Instead of spending 
+                            time looking for a bug, we can go and look at the 
+                            tests instead and see where they fail, and easily 
+                            fix it.
+                        </p>
+                        <p>
+                            When presented with a larger codebase, and trying 
+                            to understand how it all works together, and what 
+                            each component does, I now first look at the tests, 
+                            as they present a way for me to understand how the 
+                            program should be expected to run, what values 
+                            should be expected, what shouldn't be expected, and 
+                            if it currently meets expectations according for the 
+                            users.
+                        </p>
                     </div>
                 </div>
 
