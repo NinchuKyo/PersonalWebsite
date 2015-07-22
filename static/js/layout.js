@@ -25,7 +25,7 @@ fallback.ready(function() {
     
     $(window).load(function() { 
         $('.parallax').parallax();
-        $('.parallax').hide(0).delay(500).fadeIn(1000);
+        $('#header-image').hide(0).delay(500).fadeIn(1000);
         $('#header-text').hide(0).delay(1200).fadeIn(2000);
         $('#sub-header').removeClass("white-text").addClass("light-green-text");
     });
