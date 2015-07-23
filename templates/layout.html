@@ -3,7 +3,7 @@
 <html>
     <head>
         {% block head %}
-        <title>David Nguyen | {% block title %}{% endblock %}</title>
+        <title>{% block title %}{% endblock %} | David Nguyen</title>
 
         <!-- CSS (using fallback.js instead)-->
         <link rel="stylesheet"
@@ -130,7 +130,10 @@
             <div class="container">
                 <div class="row">
                     <div class="center-align">
-                        © 2015-2015 David Nguyen,  
+                        <text id="copywrite-date"></text>
+                        <noscript>
+                            © 2015 David Nguyen, 
+                        </noscript>
                         Images are licensed under <u><a class="white-text"
                         href="https://creativecommons.org/publicdomain/zero/1.0/">
                         Creative Commons Zero (CC0)</a><u>

@@ -21,6 +21,9 @@ fallback.load({
 fallback.ready(function() {
     $(document).ready(function() {
         $('.scrollspy').scrollSpy();
+        var currentTime = new Date();
+        var year = currentTime.getFullYear();
+        $('#copywrite-date').html('© 2015-' + year + ' David Nguyen, ');
     });
     
     $(window).load(function() { 
