@@ -24,15 +24,13 @@ fallback.ready(function() {
         var currentTime = new Date();
         var year = currentTime.getFullYear();
         $('#copywrite-date').html('© 2015-' + year + ' David Nguyen, ');
-    });
-    
-    $(window).load(function() { 
-        $('.parallax').parallax();
+
+	$('.parallax').parallax();
         $('#header-image').hide(0).delay(500).fadeIn(1000);
         $('#header-text').hide(0).delay(1200).fadeIn(2000);
         $('#sub-header').removeClass("white-text").addClass("light-green-text");
     });
-    
+     
     $(window).scroll(function() {
         if ($(this).scrollTop() > $('#thiswebsite').offset().top)
         {
