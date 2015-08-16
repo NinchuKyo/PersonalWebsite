@@ -28,7 +28,9 @@ fallback.ready(function() {
 	$('.parallax').parallax();
         $('#header-image').hide(0).delay(500).fadeIn(1000);
         $('#header-text').hide(0).delay(1200).fadeIn(2000);
-        $('#sub-header').removeClass("white-text").addClass("light-green-text");
+        $('#sub-header').removeClass("white-text").addClass("light-blue-text");
+        $('#header-button-about').removeClass("white-text").addClass("light-blue btn-large");
+        $('#header-button-projects').removeClass("white-text").addClass("light-blue btn-large");
     });
      
     $(window).scroll(function() {
